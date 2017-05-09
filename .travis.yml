@@ -10,4 +10,4 @@ osx_image: xcode8.3
 xcode_sdk: iphonesimulator10.3
 
 script:
-- xcodebuild clean build test -project KidLearning.xcodeproj -scheme KidLearningTests
+- xcodebuild clean build -project KidLearning/KidLearning.xcodeproj
