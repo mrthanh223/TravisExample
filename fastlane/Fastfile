@@ -59,17 +59,21 @@ desc "Submit a new Beta build to Hockey App"
 lane :beta do
   # snapshot
   # keychain_name = "ci-example-certs"
-   ensure_git_status_clean
+   # ensure_git_status_clean
    increment_build_number(build_number: number_of_commits)
    provision
     # Build
   gym(
-      configuration: "AdHoc",
-      scheme: "Wikipedia AdHoc",
-      # both of these flags are required for ad hoc
-      export_method: 'ad-hoc',
-      use_legacy_build_api: true
-)
+      # scheme: target,
+      clean: true,
+      output_directory: "./fastlane/build"
+    )
+#       # configuration: "AdHoc",
+#       scheme: "Release",
+#       # both of these flags are required for ad hoc
+#       # export_method: 'ad-hoc',
+#       # use_legacy_build_api: true
+# )
   
 
 end

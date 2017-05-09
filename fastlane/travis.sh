@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export FASTLANE_PASSWORD=Thanhcong99
 if [[ "$TRAVIS_BRANCH" == "master" ]]; then
 # Travis CI fetches a shallow clone. We use commit count until HEAD for build number. In order to assure that the count is correct we have to unshallow the clone.
 git fetch --unshallow
