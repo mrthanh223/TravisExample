@@ -12,7 +12,18 @@
 		D5104C851E551CEF002B80EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5104C831E551CEF002B80EA /* Main.storyboard */; };
 		D5104C871E551CEF002B80EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5104C861E551CEF002B80EA /* Assets.xcassets */; };
 		D5104C8A1E551CEF002B80EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5104C881E551CEF002B80EA /* LaunchScreen.storyboard */; };
+		D5C3F2BE1EC180190012E762 /* KidLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C3F2BD1EC180190012E762 /* KidLearningTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5C3F2C01EC180190012E762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5104C741E551CEF002B80EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5104C7B1E551CEF002B80EA;
+			remoteInfo = KidLearning;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D5104C7C1E551CEF002B80EA /* KidLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		D5104C861E551CEF002B80EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5104C891E551CEF002B80EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5104C8B1E551CEF002B80EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C3F2BB1EC180190012E762 /* KidLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C3F2BD1EC180190012E762 /* KidLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidLearningTests.swift; sourceTree = "<group>"; };
+		D5C3F2BF1EC180190012E762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D5104C791E551CEF002B80EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C3F2B81EC180190012E762 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				D5104C7E1E551CEF002B80EA /* KidLearning */,
+				D5C3F2BC1EC180190012E762 /* KidLearningTests */,
 				D5104C7D1E551CEF002B80EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D5104C7C1E551CEF002B80EA /* KidLearning.app */,
+				D5C3F2BB1EC180190012E762 /* KidLearningTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				D5104C8B1E551CEF002B80EA /* Info.plist */,
 			);
 			path = KidLearning;
+			sourceTree = "<group>";
+		};
+		D5C3F2BC1EC180190012E762 /* KidLearningTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3F2BD1EC180190012E762 /* KidLearningTests.swift */,
+				D5C3F2BF1EC180190012E762 /* Info.plist */,
+			);
+			path = KidLearningTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,19 +116,43 @@
 			productReference = D5104C7C1E551CEF002B80EA /* KidLearning.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D5C3F2BA1EC180190012E762 /* KidLearningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C3F2C41EC180190012E762 /* Build configuration list for PBXNativeTarget "KidLearningTests" */;
+			buildPhases = (
+				D5C3F2B71EC180190012E762 /* Sources */,
+				D5C3F2B81EC180190012E762 /* Frameworks */,
+				D5C3F2B91EC180190012E762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5C3F2C11EC180190012E762 /* PBXTargetDependency */,
+			);
+			name = KidLearningTests;
+			productName = KidLearningTests;
+			productReference = D5C3F2BB1EC180190012E762 /* KidLearningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D5104C741E551CEF002B80EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Home;
 				TargetAttributes = {
 					D5104C7B1E551CEF002B80EA = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					D5C3F2BA1EC180190012E762 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YMFV22TC2U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5104C7B1E551CEF002B80EA;
 					};
 				};
 			};
@@ -114,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				D5104C7B1E551CEF002B80EA /* KidLearning */,
+				D5C3F2BA1EC180190012E762 /* KidLearningTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5C3F2B91EC180190012E762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5C3F2B71EC180190012E762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C3F2BE1EC180190012E762 /* KidLearningTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5C3F2C11EC180190012E762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5104C7B1E551CEF002B80EA /* KidLearning */;
+			targetProxy = D5C3F2C01EC180190012E762 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D5104C831E551CEF002B80EA /* Main.storyboard */ = {
@@ -278,6 +358,38 @@
 			};
 			name = Release;
 		};
+		D5C3F2C21EC180190012E762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = YMFV22TC2U;
+				INFOPLIST_FILE = KidLearningTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KidLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidLearning.app/KidLearning";
+			};
+			name = Debug;
+		};
+		D5C3F2C31EC180190012E762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = YMFV22TC2U;
+				INFOPLIST_FILE = KidLearningTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KidLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidLearning.app/KidLearning";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -295,6 +407,15 @@
 			buildConfigurations = (
 				D5104C8F1E551CEF002B80EA /* Debug */,
 				D5104C901E551CEF002B80EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5C3F2C41EC180190012E762 /* Build configuration list for PBXNativeTarget "KidLearningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5C3F2C21EC180190012E762 /* Debug */,
+				D5C3F2C31EC180190012E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
