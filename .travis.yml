@@ -4,10 +4,10 @@ branches:
  only:
  - master
 
-xcode_project: KidLearning.xcodeproj
-xcode_scheme: KidLearningTests
+xcode_project: KidLearning/KidLearning.xcodeproj
+xcode_scheme: KidLearning/KidLearningTests
 osx_image: xcode8.3
 xcode_sdk: iphonesimulator10.3
 
 script:
-- xcodebuild clean build test -project KidLearning.xcodeproj -scheme KidLearningTests
+- xcodebuild clean build test -project KidLearning/KidLearning.xcodeproj -scheme KidLearning/KidLearningTests
