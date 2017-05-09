@@ -30,11 +30,16 @@ xcode-select --install
 
 # Available Actions
 ## iOS
+### ios provision
+```
+fastlane ios provision
+```
+Creating a code signing certificate and provisioning profile
 ### ios beta
 ```
 fastlane ios beta
 ```
-
+Submit a new Beta build to Hockey App
 
 ----
 

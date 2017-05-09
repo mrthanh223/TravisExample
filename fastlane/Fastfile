@@ -22,21 +22,58 @@ platform :ios do
     
   end
 
+
   # desc "Runs all the tests"
   # lane :test do
   #   scan
   # end
 
-  # desc "Submit a new Beta build to Hockey App"
+desc "Creating a code signing certificate and provisioning profile"
+# 2
+lane :provision do
+  # 3
+  produce(
+    app_name: 'KIDYLAND',
+    language: 'English',
+    app_version: '1.0',
+    sku: '123abc'
+  )
+  # 4
+  cert
+  # 5
+  # sigh(force: true)
+  # sigh(adhoc: true)
+   sigh(
+      adhoc: true,
+      # Fastlane has issues forcing AdHoc profiles
+      force: false
+    )
+
+end
+
+error do |lane, exception|
+# This block is called if there was an error running a lane.
+end
+
+desc "Submit a new Beta build to Hockey App"
 lane :beta do
   # snapshot
   # keychain_name = "ci-example-certs"
+   ensure_git_status_clean
    increment_build_number(build_number: number_of_commits)
+   provision
     # Build
-    gym
+  gym(
+      configuration: "AdHoc",
+      scheme: "Wikipedia AdHoc",
+      # both of these flags are required for ad hoc
+      export_method: 'ad-hoc',
+      use_legacy_build_api: true
+)
   
 
 end
+
   # desc "Deploy a new version to the App Store"
   # lane :release do
   #   # match(type: "appstore")
