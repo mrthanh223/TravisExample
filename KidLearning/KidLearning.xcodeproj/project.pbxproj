@@ -146,7 +146,8 @@
 				TargetAttributes = {
 					D5104C7B1E551CEF002B80EA = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = YMFV22TC2U;
+						ProvisioningStyle = Manual;
 					};
 					D5C3F2BA1EC180190012E762 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -338,10 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMFV22TC2U;
 				INFOPLIST_FILE = KidLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.T-D-Studio.KidLearning";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukinfo-studio.KidLearning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b42497b8-10ec-4a1a-9dc9-dfd68af3665b";
+				PROVISIONING_PROFILE_SPECIFIER = Travis_Dev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -350,10 +354,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMFV22TC2U;
 				INFOPLIST_FILE = KidLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.T-D-Studio.KidLearning";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukinfo-studio.KidLearning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78fdd5f6-e229-433e-a169-6620823ed4d3";
+				PROVISIONING_PROFILE_SPECIFIER = TestTravis_Adhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
